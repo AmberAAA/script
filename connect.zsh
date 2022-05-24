@@ -11,15 +11,20 @@ echo "Which server would you like to connect to?"
 echo "t: $t"
 echo "u: $u"
 echo "dev: $dev"
-read "name?t/u/dev: "
 
-if [[ $name == "t" ]]; then
+if [[ $1 ]] then
+else
+    read "name?t/u/dev: "
+fi
+
+
+if [[ $name == "t" || $1 == "t" ]]; then
     echo "Connecting to $t"
     ssh $t
-elif [[ $name == "u" ]]; then
+elif [[ $name == "u"|| $1 == "u" ]]; then
     echo "Connecting to $u"
     ssh $u
-elif [[ $name == "dev" ]]; then
+elif [[ $name == "dev" || $1 == "dev" ]]; then
     echo "Connecting to $dev"
     ssh $dev
 fi
