@@ -3,7 +3,7 @@
 echo "快速连接到远程服务器"
 
 t=root@tower.local
-u=amberubuntu.local
+u=amber@ubuntu.local
 dev=root@172.16.9.118
 
 echo ""
