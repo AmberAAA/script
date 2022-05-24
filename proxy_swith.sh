@@ -3,8 +3,8 @@
 echo "切换命令行代理 V1.0"
 
 
-http_proxy="http://127.0.0.1:1087"
-socks5_proxy="socks5://127.0.0.1:1080"
+http_proxy="http://192.168.1.3:20171"
+socks5_proxy="socks5://192.168.1.3:20170"
 
 
 flag=0
