@@ -4,17 +4,19 @@ echo "快速连接到远程服务器"
 
 t=root@tower.local
 u=amber@ubuntu.local
+p=root@pve.local
 dev=root@172.16.9.118
 
 echo ""
 echo "Which server would you like to connect to?"
 echo "t: $t"
 echo "u: $u"
+echo "p: $p"
 echo "dev: $dev"
 
 if [[ $1 ]] then
 else
-    read "name?t/u/dev: "
+    read "name?t/u/p/dev: "
 fi
 
 
@@ -27,4 +29,7 @@ elif [[ $name == "u"|| $1 == "u" ]]; then
 elif [[ $name == "dev" || $1 == "dev" ]]; then
     echo "Connecting to $dev"
     ssh $dev
+elif [[ $name == "p" || $1 == "p" ]]; then
+    echo "Connecting to $p"
+    ssh $p
 fi
