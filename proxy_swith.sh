@@ -3,8 +3,8 @@
 echo "切换命令行代理 V1.0"
 
 
-http_proxy="http://192.168.1.3:20171"
-socks5_proxy="socks5://192.168.1.3:20170"
+http_proxy="http://127.0.0.1:1087"
+socks5_proxy="socks5://127.0.0.1:1080"
 
 
 flag=0
@@ -14,6 +14,7 @@ setProxy(){
     export "http_proxy=$http_proxy"
     export "https_proxy=$http_proxy"
     export "ALL_PROXY=$socks5_proxy"
+    npm config set proxy $http_proxy
     echo "http_proxy: $http_proxy"
     echo "socks5_proxy: $socks5_proxy"
 }
@@ -24,6 +25,7 @@ unsetProxy() {
     unset http_proxy
     unset https_proxy
     unset ALL_PROXY
+    npm config delete proxy
 }
 
 for i in $(env | grep proxy)
