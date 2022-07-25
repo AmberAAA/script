@@ -4,7 +4,6 @@ echo "快速连接到远程服务器"
 
 t=root@tower.local
 u=amber@ubuntu.local
-p=root@pve.local
 dev=root@172.16.9.118
 aliyun=root@anborong.top
 
@@ -12,7 +11,6 @@ echo ""
 echo "Which server would you like to connect to?"
 echo "t: $t"
 echo "u: $u"
-echo "p: $p"
 echo "a: $aliyun"
 echo "dev: $dev"
 
@@ -30,10 +28,7 @@ elif [[ $name == "u"|| $1 == "u" ]]; then
     ssh $u
 elif [[ $name == "dev" || $1 == "dev" ]]; then
     echo "Connecting to $dev"
-    ssh $dev
-elif [[ $name == "p" || $1 == "p" ]]; then
-    echo "Connecting to $p"
-    ssh $p
+    ssh $de
 elif [[ $name == "a" || $1 == "a" ]]; then
     echo "Connecting to $aliyun"
     ssh $aliyun

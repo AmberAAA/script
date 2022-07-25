@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+source ~/.nvm/nvm.sh
+
 cloudApp(){
     echo "启动cloudApp"
     cd ~/code/cloudApp && npm run serve  > /dev/null 2>&1 &
@@ -24,6 +26,8 @@ echo "一键上班v1.1"
 
 echo "先下班 不破不立"
 stop
+
+nvm use 14
 
 # 一键上班
 if [ -z "$1" ]; then
