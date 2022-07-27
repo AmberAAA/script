@@ -1,5 +1,6 @@
 #!/bin/zsh
-
-nslookup srjc.anborong.top
-nslookup srjc.anborong.top
-nslookup srjc.anborong.top
+time=3
+for i in {1..3}
+do
+  nslookup srjc.anborong.top >> /dev/null
+done
