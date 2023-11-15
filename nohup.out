@@ -1,0 +1,9 @@
+[7899:7939:1114/213405.048501:ERROR:object_proxy.cc(577)] Failed to call method: org.freedesktop.DBus.Properties.Get: object_path= /org/freedesktop/portal/desktop: org.freedesktop.DBus.Error.InvalidArgs: 无此接口“org.freedesktop.portal.FileChooser”
+[7899:7939:1114/213405.048590:ERROR:select_file_dialog_linux_portal.cc(285)] Failed to read portal version property
+[7957:7978:1114/213405.538504:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -101
+[7957:7978:1114/213405.793070:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -101
+[7957:7978:1114/213407.612738:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -101
+[7957:7978:1114/213407.952289:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -101
+[7956:7956:1114/213416.726928:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 1 times!
+正在现有的浏览器会话中打开。
+[7956:7956:1114/213419.940721:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 2 times!
